@@ -1,38 +1,308 @@
-.App {
-  text-align: center;
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #fff !important;
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/************ Navbar Css ************/
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  background-color: rgba(22, 24, 24, 0.5);
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
-.App-link {
-  color: #61dafb;
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff !important;
+  padding: 0 40px;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav.navbar .navbar-nav .nav-link.navbar-link ::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link::after,
+nav.navbar .navbar-nav .nav-link.navbar-link:hover::after {
+  width: 100%;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link.active,
+nav.navbar .navbar-nav .nav-link.navbar-link:hover {
+  border: none;
+  border-bottom: 5px solid #fe9800;
+  padding-bottom: 20px;
+  color: #fe9800;
+}
+
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms linear;
+  top: -2px;
+}
+
+nav.navbar .navbar-toggler-icon:focus {
+  border-bottom: 2px solid #fff;
+}
+
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+  width: 24px;
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  content: '';
+  z-index: 2;
+  transition: all 300ms linear;
+}
+
+nav.navbar .navbar-toggler-icon:after {
+  top: 8px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(45deg);
+  background-color: #fff;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform: translateY(8px) rotate(-45deg);
+  background-color: #fff;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  border-color: transparent;
+}
+
+/************ Home Css ************/
+.home {
+  width: 100%;
+  margin-top: 0;
+  padding: 260px 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('./Assets/MaskGroup.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #494439;
+}
+.home span {
+  color: #fe9800;
+}
+.home .icon .img-fluid{
+  width: 15px;
+  height: 15px;
+}
+.home .icon p{
+  font-size: 12px;
+}
+
+/************ Presentation Css ************/
+.presentation .para-text .titre h2 {
+  color: #009688;
+}
+
+/************ Portfolio Css ************/
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+.portfolio .portfolio-item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.portfolio .portfolio-item:hover {
+  box-shadow: rgb(254, 152, 0) 0px 5px 15px;
+}
+
+.portfolio .portfolio-item .image {
+  width: 200px;
+  height: 100px;
+}
+
+.portfolio .portfolio-item .titre h2 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #009688;
+}
+
+.portfolio .portfolio-item:hover .titre h2 {
+  color: #fe9800;
+}
+
+.portfolio .portfolio-item .texte p {
+  font-size: 13px;
+}
+
+.portfolio .portfolio-item .bouton .btn {
+  border: 1px solid #009688;
+  font-size: 13px;
+  color: #009688;
+}
+
+.portfolio .portfolio-item:hover .bouton .btn {
+  background-color: #fe9800;
+  border: none;
+  color: #fff;
+}
+
+/************ Portfolio Css ************/
+.competences {
+  background-color: #f7f7f7;
+}
+
+.competences .titre {
+  background-color: #f7f7f7;
+}
+
+.competences .titre h1,
+.competences .titre1 h1 {
+  color: #009688;
+}
+
+/************ Competence Css ************/
+.experiences {
+  background-color: #f7f7f7;
+}
+
+.experiences .col-item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.experiences .col-item p {
+  color: #fe9800;
+}
+
+/************ Projet Css ************/
+.projet {
+  padding: 50px 0 25px 0;
+  background-image: url('./Assets/projet-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1a2022;
+
+}
+
+.projet .col-item{
+  border: none;
+  border-right: 5px solid white;
+ 
+ }
+ .projet .col-item1{
+  border: none;
+ 
+ }
+
+/************ Contact Css ************/
+.contact .formulaire form{
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  margin-top: -5%;
+  background-color: transparent;
+}
+.contact .formulaire form .form-control{
+  border: none;
+  border-bottom: 1px solid grey;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+.contact .formulaire form .form-control::placeholder{
+  background-color: transparent;
+}
+.contact .formulaire form .textarea{
+  border: 1px solid black;
+  outline: none;
+  box-shadow: none;
+  height: 300px;
+}
+
+.contact .formulaire .btn{
+  background-color: #fe9800;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+}
+
+.contact .bouton1{
+  position: absolute;
+  z-index: 100;
+}
+.contact .btn1{
+  background-color: #fe9800;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  position: absolute;
+  z-index: 100;
+}
+.contact .btn1:hover{
+  background-color: #fe9800;
+  color: #fff;
+}
+.contact .img{
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: 1;
+}
+
+/************ Footer Css ************/
+.footer{
+  background: linear-gradient(180deg, #FFFFFF 40.63%, #009687 106.25%);
+  height: 300px;
+}
+.footer h1{
+ font-size: 30px;
+ color: #fff;
 }
