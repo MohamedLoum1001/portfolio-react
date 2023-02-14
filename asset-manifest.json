@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.bc2fff95.css",
+    "main.js": "/portfolio-react/static/js/main.bcb40228.js",
+    "static/js/787.aeca62f9.chunk.js": "/portfolio-react/static/js/787.aeca62f9.chunk.js",
+    "static/media/MaskGroup.png": "/portfolio-react/static/media/MaskGroup.3dac1e285ed7df71de52.png",
+    "static/media/KANDE.png": "/portfolio-react/static/media/KANDE.c273d2c0babddb6aa6c2.png",
+    "static/media/kande1.png": "/portfolio-react/static/media/kande1.12bb448ceb928ea9650c.png",
+    "static/media/projet-bg.png": "/portfolio-react/static/media/projet-bg.4cc050c453e3a1408a9b.png",
+    "static/media/volkeno2.png": "/portfolio-react/static/media/volkeno2.bf5a0878b6b577a20f0b.png",
+    "static/media/volkeno1.png": "/portfolio-react/static/media/volkeno1.c60a75061ea8c1af2f4a.png",
+    "static/media/fewnu-mobile.png": "/portfolio-react/static/media/fewnu-mobile.aa7f72a77091c303b298.png",
+    "static/media/bakeli.png": "/portfolio-react/static/media/bakeli.755ec111743758b94b41.png",
+    "static/media/fewnu.png": "/portfolio-react/static/media/fewnu.6558d92452a2d31ed4eb.png",
+    "static/media/logo.svg": "/portfolio-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio-react/index.html",
+    "main.bc2fff95.css.map": "/portfolio-react/static/css/main.bc2fff95.css.map",
+    "main.bcb40228.js.map": "/portfolio-react/static/js/main.bcb40228.js.map",
+    "787.aeca62f9.chunk.js.map": "/portfolio-react/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc2fff95.css",
+    "static/js/main.bcb40228.js"
+  ]
+}
